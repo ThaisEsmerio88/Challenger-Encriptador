@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <a href="https://www.alura.com.br/"><img src= "imagens/logo alura.png" class="logo-alura" alt="logo alura"></a>
+        <!-- <img class="logo-alura" src = "imagens/logo alura.png" alt="logo alura"> -->
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto aqui"></textarea>
+            <div class="informacao"> 
+                <img src="imagens/info.png">
+                <h6>Apenas letras minúsculas e sem acento</h6>
+            </div>
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="cripto">
+            <textarea class="mensagem" cols="20" rows="10" required></textarea>
+            <button onclick="copiarTexto()" class="btn-copiar">Copiar</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Thaís Esmério</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

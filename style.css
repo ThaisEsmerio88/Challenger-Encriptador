@@ -1,0 +1,148 @@
+* {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    line-height: 150%;
+}
+
+:root {
+    --cor-primaria: #122C34;
+    --cor-secundaria: #fcfaff;
+    --cor-terciaria: #5C6D70;
+
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background: var(--cor-secundaria);
+    overflow: auto;
+      
+}
+
+.logo-alura {
+    margin-left: 50px;
+    padding-top: 5px;
+    width: 6%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 80px;
+ }
+
+ .text-area {
+    border: none;
+    color: var(--cor-primaria);
+    margin-top: 20px;
+    text-transform: lowercase;
+    font-size: 32px;
+}
+
+::placeholder {color: var(--cor-primaria);};
+    .text-area :focus{
+        outline: none;
+    }
+
+.mensagem {
+    background: var(--cor-secundaria);
+    background-image: none;
+    border-radius: 24px;
+    color: var(--cor-primaria);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+    font-size: 32px;
+
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.mensagem:required:invalid {
+background-image: url(imagens/lupa.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+display: flex;
+align-items: flex-end;
+}
+
+.informacao {
+    color: var(--cor-primaria);
+    font-size: 20px;
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 5px;
+}
+
+.btn-encriptar {
+    background-color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+    height: 67px;
+    width: 320px;
+    font-size: 32px;
+    margin-top: 90px;
+    
+}
+
+.btn-encriptar:hover {
+    background-color: var(--cor-terciaria);
+
+}
+
+.btn-desencriptar {
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    cursor: pointer;
+    color: var(--cor-primaria);
+    height: 67px;
+    width: 320px;
+    margin-left: 20px;
+    font-size: 32px;
+    margin-top: 90px;
+
+}
+
+.btn-desencriptar:hover {
+    background-color: var(--cor-terciaria);
+
+}
+
+.btn-copiar {
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    color:var(--cor-primaria);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 120px;
+    margin-top: 415px;
+    position: absolute;
+    width: 320px;
+    font-size: 32px;
+
+}
+
+.btn-copiar:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    text-align: center;
+    font-size: 12px;
+    padding: 2px;
+}
+
